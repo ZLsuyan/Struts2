@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <package name="actions" extends="struts-default" namespace="/actions">
+        <action name="Student*" class="com.bjsxt.struts2.action.StudentAction" method="{1}">
+            <result>/Student{1}_success.jsp</result>
+        </action>
+        
+        <action name="*_*" class="com.bjsxt.struts2.action.{1}Action" method="{2}">
+            <result>/{1}_{2}_success.jsp</result>
+            <!-- {0}_success.jsp -->
+        </action>
+    </package>
+</struts>

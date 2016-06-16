@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    
+    <!-- 想要在struts2.1中访问静态方法，必须写上下面这一句配置 -->
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+    
+    
+	<include file="/com/bjsxt/struts2/ognl/ognl.xml"/>
+    
+
+
+</struts>

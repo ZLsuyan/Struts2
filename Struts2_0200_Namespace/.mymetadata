@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Struts2_0200_Namespace"
+  id="myeclipse.1253320986000"
+  context-root="/Struts2_0200_Namespace"
+  j2ee-spec="5.0"
+  archive="Struts2_0200_Namespace.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

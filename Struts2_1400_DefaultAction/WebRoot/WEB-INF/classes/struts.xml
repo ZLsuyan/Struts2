@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    
+    <package name="default" namespace="/" extends="struts-default">
+    
+    <!-- 默认action引用 -->
+    <!-- 写了下面那句话，则默认的action是index，而工程默认是访问的index，
+                       但是如果不写下面那句话，那么默认的就不是action就不是index，那么访问时必须写上index这个action的名字。 -->
+     	<default-action-ref name="index"></default-action-ref> 
+    
+    	<action name="index">
+    		<result>/default.jsp</result>
+    	</action>
+    </package>
+</struts>

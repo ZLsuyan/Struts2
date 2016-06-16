@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Struts2_1700_DynamicResult"
+  id="myeclipse.1253320986000"
+  context-root="/Struts2_1700_DynamicResult"
+  j2ee-spec="5.0"
+  archive="Struts2_1700_DynamicResult.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <package name="user" namespace="/user" extends="struts-default">
+    	
+	    <action name="user" class="com.bjsxt.struts2.user.action.UserAction">
+	    	<result type="redirect">/user_success.jsp?t=${type}</result>
+	    </action>	    
+    </package>
+    	
+</struts>
